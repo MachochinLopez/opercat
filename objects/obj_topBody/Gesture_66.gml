@@ -5,7 +5,7 @@ dragOffsetX = x - event_data[?"posX"];
 dragPosY = event_data[?"posY"] + dragOffsetY;
 dragPosX = event_data[?"posX"] + dragOffsetX;
 
-bodyBottomInstance = instance_create_layer(dragPosX, dragPosY, "body", obj_topBody);
+bodyBottomInstance = instance_create_layer(dragPosX, dragPosY, "body", obj_bottomBody);
 bodyMiddleInstance = instance_create_layer(dragPosX, dragPosY, "body", obj_middleBody);
 
 // Slow down physics
