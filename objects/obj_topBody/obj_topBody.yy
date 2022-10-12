@@ -24,8 +24,8 @@
   "physicsStartAwake": false,
   "physicsKinematic": false,
   "physicsShapePoints": [
-    {"x":32.0,"y":32.0,},
-    {"x":32.0,"y":32.0,},
+    {"x":2217.0,"y":2919.0,},
+    {"x":1457.0,"y":2919.0,},
   ],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},

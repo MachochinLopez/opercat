@@ -5,11 +5,10 @@
 MIN_DRAG_DISTANCE = 30;
 MAX_DRAG = 300;
 
-IMPULSE_FORCE = 2;
+IMPULSE_FORCE = 1.5;
 ELONGATING_FACTOR = 0.0055;
 
 REGULAR_GRAVITY = 100;
-
 
 // Instance vars initialization.
 distanceBetween = 0;
