@@ -1,9 +1,6 @@
 /// @description On drag release of cat
 // Launch cat.
 
-instance_destroy(bodyBottomInstance);
-instance_destroy(bodyMiddleInstance);
-
 if (distanceBetween > MIN_DRAG_DISTANCE) {
 	// Launch cat towards angle.
 	// Angle: Diff between the bottom and the top of the cat.
@@ -13,6 +10,9 @@ if (distanceBetween > MIN_DRAG_DISTANCE) {
 		(bodyBottomInstance.y - y) * -IMPULSE_FORCE
 	);
 }
+
+instance_destroy(bodyBottomInstance);
+instance_destroy(bodyMiddleInstance);
 
 // Reset gravity.
 physics_world_gravity(0, REGULAR_GRAVITY);
