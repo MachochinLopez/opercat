@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_topBody",
   "spriteId": {
-    "name": "spr_topBody",
-    "path": "sprites/spr_topBody/spr_topBody.yy",
+    "name": "idle_anim_1_01",
+    "path": "sprites/idle_anim_1_01/idle_anim_1_01.yy",
   },
   "solid": false,
   "visible": true,
