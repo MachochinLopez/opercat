@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_bottomBody",
   "spriteId": {
-    "name": "spr_bottomBody",
-    "path": "sprites/spr_bottomBody/spr_bottomBody.yy",
+    "name": "spr_bottomBody_sm",
+    "path": "sprites/spr_bottomBody_sm/spr_bottomBody_sm.yy",
   },
   "solid": false,
   "visible": true,
