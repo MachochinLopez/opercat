@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_topBody",
   "spriteId": {
-    "name": "idle_anim_1_01",
-    "path": "sprites/idle_anim_1_01/idle_anim_1_01.yy",
+    "name": "idle_anim_sm",
+    "path": "sprites/idle_anim_sm/idle_anim_sm.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,8 +24,8 @@
   "physicsStartAwake": false,
   "physicsKinematic": false,
   "physicsShapePoints": [
-    {"x":2217.0,"y":2919.0,},
-    {"x":1457.0,"y":2919.0,},
+    {"x":97.0,"y":71.0,},
+    {"x":44.0,"y":71.0,},
   ],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
@@ -33,6 +33,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":66,"eventType":13,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":68,"eventType":13,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":76,"eventType":7,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],

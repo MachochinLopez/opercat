@@ -4,8 +4,8 @@
 // weird behaviors).
 if (instance_exists(bodyMiddleInstance)) {
 	// Angle from the top to the bottom of the body.
-	cat_angle = point_direction(x, y, dragPosX, dragPosY);
-	my_sprite_angle = cat_angle  + 90;
+	catAngle = point_direction(x, y, dragPosX, dragPosY);
+	my_sprite_angle = catAngle  + 90;
 	
 	// Clamp body length.
 	distanceBetween = clamp(point_distance(dragPosX, dragPosY, x, y), MIN_DRAG_DISTANCE, MAX_DRAG);
@@ -18,8 +18,8 @@ if (instance_exists(bodyMiddleInstance)) {
 		bodyMiddleInstance.image_angle = image_angle;
 		
 		// Modify position of the bottom body.
-		bodyBottomInstance.x = x + lengthdir_x(distanceBetween, cat_angle);
-		bodyBottomInstance.y = y + lengthdir_y(distanceBetween, cat_angle);
+		bodyBottomInstance.x = x + lengthdir_x(distanceBetween, catAngle);
+		bodyBottomInstance.y = y + lengthdir_y(distanceBetween, catAngle);
 
 		// Modify middle body position and size.
 		bodyMiddleInstance.x = bodyBottomInstance.x;

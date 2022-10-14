@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_middleBody",
   "spriteId": {
-    "name": "spr_middleBody",
-    "path": "sprites/spr_middleBody/spr_middleBody.yy",
+    "name": "spr_middleBody_sm",
+    "path": "sprites/spr_middleBody_sm/spr_middleBody_sm.yy",
   },
   "solid": false,
   "visible": true,
