@@ -23,4 +23,12 @@ phy_fixed_rotation = true;
 /*****************
  *** ANIMATION ***
  *****************/
+
 ANIMATION_FPS = 14;
+
+/**************
+ *** STATUS ***
+ **************/
+ 
+isFalling = false;
+isLaunched = false;

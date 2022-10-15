@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "Opercat",
   "resources": [
+    {"id":{"name":"falling_sm","path":"sprites/falling_sm/falling_sm.yy",},"order":5,},
     {"id":{"name":"obj_timeController","path":"objects/obj_timeController/obj_timeController.yy",},"order":0,},
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"order":3,},
     {"id":{"name":"idle_anim_1_01","path":"sprites/idle_anim_1_01/idle_anim_1_01.yy",},"order":0,},
@@ -18,6 +19,7 @@
     {"id":{"name":"spr_flying","path":"sprites/spr_flying/spr_flying.yy",},"order":8,},
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},"order":3,},
     {"id":{"name":"obj_bottomBody","path":"objects/obj_bottomBody/obj_bottomBody.yy",},"order":0,},
+    {"id":{"name":"falling_01","path":"sprites/falling_01/falling_01.yy",},"order":4,},
     {"id":{"name":"idle_anim_sm","path":"sprites/idle_anim_sm/idle_anim_sm.yy",},"order":1,},
     {"id":{"name":"spr_topBody_sm","path":"sprites/spr_topBody_sm/spr_topBody_sm.yy",},"order":5,},
     {"id":{"name":"Sala1","path":"rooms/Sala1/Sala1.yy",},"order":0,},

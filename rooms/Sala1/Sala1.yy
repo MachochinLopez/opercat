@@ -59,7 +59,7 @@
     "PhysicsWorld": true,
     "PhysicsWorldGravityX": 0.0,
     "PhysicsWorldGravityY": 100.0,
-    "PhysicsWorldPixToMetres": 0.05,
+    "PhysicsWorldPixToMetres": 0.045,
   },
   "parent": {
     "name": "Salas",

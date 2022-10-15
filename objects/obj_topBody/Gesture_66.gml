@@ -22,3 +22,9 @@ physics_world_gravity(0, 0);
 
 image_speed = ANIMATION_FPS;
 sprite_index = spr_topBody_sm;
+
+/**************
+ *** STATUS ***
+ **************/
+ 
+ isLaunched = false;
