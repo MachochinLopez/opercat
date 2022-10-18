@@ -8,13 +8,18 @@ other.phy_rotation = 0;
 other.phy_speed_x = 0;
 other.phy_speed_y = 0;
 
-other.sprite_index = falling_sm;
+other.sprite_index = falling_w_damage;
+
 // Camera shake.
 obj_cameraController.shake = true;
 obj_cameraController.alarm[0] = 10;
 
 alarm[0] = 15;
 alive = false;
+
+// Stun
+other.alarm[2] = 30;
+other.isEnabled = false;
 
 /*************
  *** Sound ***

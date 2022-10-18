@@ -1,7 +1,7 @@
 /// @description On dragging cat
 // Instances the body bottom and clamps it to a max distance.
 
-if (!alive) return;
+if (!alive or !isEnabled) return;
 
 // Update drag offset.
 dragPosY = event_data[?"posY"] + dragOffsetY;

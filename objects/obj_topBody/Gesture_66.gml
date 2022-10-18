@@ -1,6 +1,6 @@
 /// @description On drag start cat
 
-if (!alive) return;
+if (!alive or !isEnabled) return;
 
 dragOffsetY = y - event_data[?"posY"];
 dragOffsetX = x - event_data[?"posX"];

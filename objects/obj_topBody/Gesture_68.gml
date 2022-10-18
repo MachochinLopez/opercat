@@ -1,13 +1,15 @@
 /// @description On drag release of cat
 // Launch cat.
 
-if (!alive) return;
+if (!alive or !isEnabled) return;
 
-launchDirectionX = (bodyBottomInstance.x - x) * -IMPULSE_FORCE;
-launchDirectionY = (bodyBottomInstance.y - y) * -IMPULSE_FORCE;
+if (instance_exists(bodyBottomInstance) and instance_exists(bodyMiddleInstance)) {	
+	launchDirectionX = (bodyBottomInstance.x - x) * -IMPULSE_FORCE;
+	launchDirectionY = (bodyBottomInstance.y - y) * -IMPULSE_FORCE;
 
-instance_destroy(bodyBottomInstance);
-instance_destroy(bodyMiddleInstance);
+	instance_destroy(bodyBottomInstance);
+	instance_destroy(bodyMiddleInstance);
+}
 
 /**************************
  *** ANIMATION BEHAVIOR ***
@@ -21,3 +23,4 @@ image_speed = 2;
  *************/
  
 audio_play_sound(snd_launch_cropped, 2, false);
+layer_set_visible("Tutorial", false);
