@@ -1,7 +1,7 @@
 /// @description eachFrame
 
 var shouldScroll = playerRef.phy_position_y <= MIN_YPOS && playerRef.phy_speed_y < 0;
-var distance = shouldScroll ? playerRef.phy_speed_y : (-CONTINUOUS_SCROLL_SPEED);
+var distance = shouldScroll ? playerRef.phy_speed_y : (-CONTINUOUS_SCROLL_SPEED * obj_timeController.slowingFactor);
 
 if (shouldScroll) {
 	playerRef.phy_position_y = MIN_YPOS;

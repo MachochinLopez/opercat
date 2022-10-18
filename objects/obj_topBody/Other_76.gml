@@ -1,4 +1,5 @@
 /// @description broadcast
+if (!alive) return;
 
 if (event_data[? "event_type"] == "sprite event")
 {
