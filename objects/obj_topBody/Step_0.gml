@@ -54,6 +54,9 @@ if (place_meeting(x, y + 10, obj_deathZone) and alive) {
 	if (instance_exists(obj_middleBody)) instance_destroy(obj_middleBody);
 	if (instance_exists(obj_bottomBody)) instance_destroy(obj_bottomBody);
 	
+	// Play death sound
+	audio_play_sound(snd_cat_scream_cropped_good, 2, false);
+	
 	// Set alarm.
 	alarm[0] = 30;
 	alarm[1] = 30;
@@ -78,4 +81,18 @@ if (place_meeting(x, y, obj_stopPlayer)) {
 	gameOver = true;
 	layer_set_visible("gameOverButtons", true);
 	layer_set_visible("gameOverAssets", true);
+	
+	// Store highscore.
+	try {
+		ini_open("highscore.ini");
+		var highscore = ini_read_real("Scores", "Highscore", 0);
+		show_debug_message(highscore);
+		if (global.currentScore > highscore) {
+			ini_write_real("Scores", "Highscore", global.currentScore);	
+		}
+		ini_close();
+	} catch (e) {
+		show_debug_message("ASDHFDJASHFKLJASDHFA");
+		show_debug_message(e);
+	}
 }

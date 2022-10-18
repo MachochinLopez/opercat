@@ -1,12 +1,12 @@
 /// @description onCreate
 
 // CONSTANTS
-MIN_DISTANCE_BETWEEN_SPAWNS = 400;
-MAX_DISTANCE_BETWEEN_SPAWNS = 600;
+MIN_DISTANCE_BETWEEN_SPAWNS = 300;
+MAX_DISTANCE_BETWEEN_SPAWNS = 500;
 SPAWN_POSY = -50;
 
-MIN_SPAWN_RATE = 30; // In seconds
-MAX_SPAWN_RATE = 60; // In seconds
+MIN_SPAWN_RATE = 20; // In frames I guess?
+MAX_SPAWN_RATE = 40; // In frames I guess?
 
 // Init vars
 lastInstance = noone;
