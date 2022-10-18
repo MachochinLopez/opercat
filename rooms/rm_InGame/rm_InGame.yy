@@ -61,7 +61,7 @@
       ],"visible":true,"depth":1300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "${project_dir}/rooms/Sala1/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/rm_InGame/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_13A2807B","path":"rooms/rm_InGame/rm_InGame.yy",},

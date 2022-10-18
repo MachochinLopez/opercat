@@ -15,3 +15,9 @@ instance_destroy(bodyMiddleInstance);
 
 sprite_index = squash_fly_sm;
 image_speed = 2;
+
+/*************
+ *** SOUND ***
+ *************/
+ 
+audio_play_sound(snd_launch_cropped, 2, false);

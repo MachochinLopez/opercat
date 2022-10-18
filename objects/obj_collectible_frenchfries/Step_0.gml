@@ -21,6 +21,11 @@ if (alive) {
 		alarm[0] = 15;
 		alive = false;
 		
+		/*************
+		 *** Sound ***
+		 *************/
+		 audio_play_sound(snd_munch_cropped, 2, false);
+		
 		/**********************
 		 *** Score behavior ***
 		 **********************/

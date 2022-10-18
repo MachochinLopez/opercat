@@ -15,3 +15,10 @@ obj_cameraController.alarm[0] = 10;
 
 alarm[0] = 15;
 alive = false;
+
+/*************
+ *** Sound ***
+ *************/
+
+audio_play_sound(snd_bonk, 2, false);
+audio_play_sound(snd_la_cague_sped_up, 2, false);
