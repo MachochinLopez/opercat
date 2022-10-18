@@ -4,6 +4,7 @@ var shouldScroll = playerRef.phy_position_y <= MIN_YPOS && playerRef.phy_speed_y
 
 if (shouldScroll) {
 	playerRef.phy_position_y = MIN_YPOS;
+	refreshElementsOfLayers();
 }
 
 /**********************
@@ -35,7 +36,7 @@ if (shouldScroll) {
 		var inst = layer_instance_get_instance(collectiblesElements[i]);
 		// Depth index affects scroll velocity.
 		if (instance_exists(inst)) {
-			inst.y += -playerRef.phy_speed_y * DECELERATION_FACTOR_COLLECTIBLES * (i + 1);
+			inst.y += -playerRef.phy_speed_y * DECELERATION_FACTOR_COLLECTIBLES;
 		}
 	}
 	
@@ -44,7 +45,7 @@ if (shouldScroll) {
 		var inst = layer_instance_get_instance(enemiesElements[i]);
 		// Depth index affects scroll velocity.
 		if (instance_exists(inst)) {
-			inst.phy_position_y += -playerRef.phy_speed_y * DECELERATION_FACTOR_COLLECTIBLES * (i + 1);
+			inst.phy_position_y += -playerRef.phy_speed_y * DECELERATION_FACTOR_COLLECTIBLES;
 		}
 	}
 }
@@ -55,5 +56,4 @@ if (shouldScroll) {
 
 if (shouldScroll) {
 	global.currentScore += obj_scoreController.SCORE_UNIT;
-	show_debug_message(global.currentScore);
 }
