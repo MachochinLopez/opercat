@@ -71,6 +71,7 @@ if (place_meeting(x, y, obj_stopPlayer)) {
 	phy_speed_x = 0;
 	physics_world_gravity(0, 0);
 	// Show game over.
+	gameOver = true;
 	layer_set_visible("gameOverButtons", true);
 	layer_set_visible("gameOverAssets", true);
 }
