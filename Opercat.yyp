@@ -3,8 +3,10 @@
   "resourceVersion": "1.6",
   "name": "Opercat",
   "resources": [
+    {"id":{"name":"obj_deathZone","path":"objects/obj_deathZone/obj_deathZone.yy",},"order":10,},
     {"id":{"name":"falling_sm","path":"sprites/falling_sm/falling_sm.yy",},"order":5,},
     {"id":{"name":"spr_french_fries","path":"sprites/spr_french_fries/spr_french_fries.yy",},"order":0,},
+    {"id":{"name":"spr_gameManager","path":"sprites/spr_gameManager/spr_gameManager.yy",},"order":3,},
     {"id":{"name":"obj_timeController","path":"objects/obj_timeController/obj_timeController.yy",},"order":0,},
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"order":3,},
     {"id":{"name":"idle_anim_1_01","path":"sprites/idle_anim_1_01/idle_anim_1_01.yy",},"order":0,},
@@ -28,6 +30,7 @@
     {"id":{"name":"spr_middleBody","path":"sprites/spr_middleBody/spr_middleBody.yy",},"order":2,},
     {"id":{"name":"spr_field","path":"sprites/spr_field/spr_field.yy",},"order":2,},
     {"id":{"name":"obj_sun","path":"objects/obj_sun/obj_sun.yy",},"order":1,},
+    {"id":{"name":"obj_gameController","path":"objects/obj_gameController/obj_gameController.yy",},"order":3,},
     {"id":{"name":"spr_stars1","path":"sprites/spr_stars1/spr_stars1.yy",},"order":1,},
     {"id":{"name":"spr_topBody","path":"sprites/spr_topBody/spr_topBody.yy",},"order":1,},
     {"id":{"name":"spr_flying","path":"sprites/spr_flying/spr_flying.yy",},"order":8,},
@@ -106,10 +109,10 @@
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
   ],
   "TextureGroups": [
-    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
+    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","loadType":"default","directory":"","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.8.1.37",
+    "IDEVersion": "2022.9.1.51",
   },
 }
