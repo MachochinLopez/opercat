@@ -15,3 +15,9 @@ if (dir == 1) {
  
 if (obj_timeController.isSlowing) image_speed = SLOW_FPS;
 else image_speed = REGULAR_FPS;
+
+if (!alive) {
+	image_yscale += EXPANSION_RATE;
+	image_xscale += EXPANSION_RATE;
+	sprite_index = spr_bizcocho_dead;	
+}

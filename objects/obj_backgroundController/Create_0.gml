@@ -5,6 +5,7 @@
  ***************************/
 
 playerRef = obj_topBody;
+started = false;
 
 /*************************
  *** Background Layers ***
@@ -25,6 +26,7 @@ MIN_YPOS = 700;
 DECELERATION_FACTOR_COLLECTIBLES = 0.85;
 DECELERATION_FACTOR2 = 0.45;
 DECELERATION_FACTOR3 = 0.05;
+CONTINUOUS_SCROLL_SPEED = 5;
 
 /*****************
  *** Functions ***

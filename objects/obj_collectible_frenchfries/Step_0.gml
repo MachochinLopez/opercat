@@ -21,10 +21,6 @@ if (alive) {
 		alarm[0] = 15;
 		alive = false;
 		
-		// Camera shake.
-		obj_cameraController.shake = true;
-		obj_cameraController.alarm[0] =	30;
-		
 		/**********************
 		 *** Score behavior ***
 		 **********************/
