@@ -2,6 +2,7 @@
 // Mostly set vars
 
 alive = true;
+isEnabled = true;
 gameOver = false;
 
 // Constants.
@@ -23,6 +24,7 @@ dragOffsetX = 0;
 
 // Init Physics.
 phy_fixed_rotation = true;
+phy_bullet = true;
 
 /*****************
  *** ANIMATION ***

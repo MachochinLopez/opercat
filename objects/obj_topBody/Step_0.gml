@@ -2,7 +2,7 @@
 
 // Only affect body position if the minimum length is reached (to prevent
 // weird behaviors).
-if (instance_exists(bodyMiddleInstance) and alive) {
+if (instance_exists(bodyMiddleInstance) and alive and isEnabled) {
 	// Angle from the top to the bottom of the body.
 	catAngle = point_direction(x, y, dragPosX, dragPosY);
 	my_sprite_angle = catAngle  + 90;
@@ -83,10 +83,10 @@ if (place_meeting(x, y, obj_stopPlayer)) {
 	layer_set_visible("gameOverAssets", true);
 	
 	// Store highscore.
+	/**
 	try {
 		ini_open("highscore.ini");
 		var highscore = ini_read_real("Scores", "Highscore", 0);
-		show_debug_message(highscore);
 		if (global.currentScore > highscore) {
 			ini_write_real("Scores", "Highscore", global.currentScore);	
 		}
@@ -95,4 +95,5 @@ if (place_meeting(x, y, obj_stopPlayer)) {
 		show_debug_message("ASDHFDJASHFKLJASDHFA");
 		show_debug_message(e);
 	}
+	**/
 }

@@ -1,5 +1,5 @@
 /// @description broadcast
-if (!alive) return;
+if (!alive or !isEnabled) return;
 
 if (event_data[? "event_type"] == "sprite event")
 {

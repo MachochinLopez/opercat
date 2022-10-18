@@ -1,7 +1,9 @@
 /// @description eachFrame
 
 var shouldScroll = playerRef.phy_position_y <= MIN_YPOS && playerRef.phy_speed_y < 0;
-var distance = shouldScroll ? playerRef.phy_speed_y : (-CONTINUOUS_SCROLL_SPEED * obj_timeController.slowingFactor);
+var distance = shouldScroll
+	? playerRef.phy_speed_y
+	: (-CONTINUOUS_SCROLL_SPEED * obj_timeController.slowingFactor);
 
 if (shouldScroll) {
 	playerRef.phy_position_y = MIN_YPOS;
@@ -9,8 +11,8 @@ if (shouldScroll) {
 }
 
 /**********************
-*** Score Behavior ***
-**********************/
+ *** Score Behavior ***
+ **********************/
 
 if (playerRef.phy_speed_y < 0) global.currentScore += obj_scoreController.SCORE_UNIT * -distance;
 
