@@ -50,6 +50,10 @@ if (isFalling && isLaunched) {
  **********************/
 
 if (place_meeting(x, y + 10, obj_deathZone) and alive) {
+	// Despawn body
+	if (instance_exists(obj_middleBody)) instance_destroy(obj_middleBody);
+	if (instance_exists(obj_bottomBody)) instance_destroy(obj_bottomBody);
+	
 	// Set alarm.
 	alarm[0] = 30;
 	alarm[1] = 30;
