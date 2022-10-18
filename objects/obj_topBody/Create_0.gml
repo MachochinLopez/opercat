@@ -2,6 +2,7 @@
 // Mostly set vars
 
 alive = true;
+gameOver = false;
 
 // Constants.
 MIN_DRAG_DISTANCE = 30;

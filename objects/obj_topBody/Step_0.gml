@@ -49,7 +49,7 @@ if (isFalling && isLaunched) {
  *** DEATH BEHAVIOR ***
  **********************/
 
-if (place_meeting(x, y, obj_deathZone) and alive) {
+if (place_meeting(x, y + 10, obj_deathZone) and alive) {
 	// Set alarm.
 	alarm[0] = 30;
 	// Stop player
@@ -63,4 +63,14 @@ if (place_meeting(x, y, obj_deathZone) and alive) {
 	obj_cameraController.alarm[0] =	30;
 	
 	alive = false;
+}
+
+if (place_meeting(x, y, obj_stopPlayer)) {
+	show_debug_message("ASDHFKLJASDHFJAHSDKF");
+	phy_speed_y = 0;
+	phy_speed_x = 0;
+	physics_world_gravity(0, 0);
+	// Show game over.
+	layer_set_visible("gameOverButtons", true);
+	layer_set_visible("gameOverAssets", true);
 }
