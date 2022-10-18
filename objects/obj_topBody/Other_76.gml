@@ -1,7 +1,5 @@
 /// @description broadcast
 
-show_debug_message(event_data[? "message"]);
-
 if (event_data[? "event_type"] == "sprite event")
 {
 	switch (event_data[? "message"])
@@ -14,6 +12,7 @@ if (event_data[? "event_type"] == "sprite event")
 			physics_apply_impulse(x, y, launchDirectionX, launchDirectionY);
 		break;
 		case "squash_end":
+			isLaunched = true;
 			sprite_index = spr_flying;
 		break;
 	}

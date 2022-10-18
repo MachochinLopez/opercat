@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_timeController",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_bgManager",
+    "path": "sprites/spr_bgManager/spr_bgManager.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

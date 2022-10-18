@@ -29,3 +29,17 @@ if (instance_exists(bodyMiddleInstance)) {
 	// Elongate middle body.
 	bodyMiddleInstance.image_yscale = distanceBetween * ELONGATING_FACTOR;
 }
+
+/**************************
+ *** ANIMATION BEHAVIOR ***
+ **************************/
+ 
+if (phy_speed_y >= 1) {
+	isFalling = true;
+} else {
+	isFalling = false;
+}
+
+if (isFalling && isLaunched) {
+	sprite_index = falling_sm;
+}
