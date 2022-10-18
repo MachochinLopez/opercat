@@ -30,3 +30,9 @@ sprite_index = spr_topBody_sm;
  **************/
  
  isLaunched = false;
+ 
+/*************
+ *** SOUND ***
+ *************/
+ 
+audio_play_sound(snd_stretch_cropped, 2, false);
