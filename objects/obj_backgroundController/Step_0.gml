@@ -24,3 +24,12 @@ if (shouldScroll) {
 		inst.y += -playerRef.phy_speed_y * DECELERATION_FACTOR3 * (i + 1);
 	}
 }
+
+/**********************
+ *** Score Behavior ***
+ **********************/
+
+if (shouldScroll) {
+	global.currentScore += obj_scoreController.SCORE_UNIT;
+	show_debug_message(global.currentScore);
+}
