@@ -21,8 +21,8 @@ enemiesId = layer_get_id("enemies");
  *** Constants ***
  *****************/
 
-MIN_YPOS = 600;
-DECELERATION_FACTOR_COLLECTIBLES = 0.45;
+MIN_YPOS = 700;
+DECELERATION_FACTOR_COLLECTIBLES = 0.65;
 DECELERATION_FACTOR2 = 0.45;
 DECELERATION_FACTOR3 = 0.05;
 

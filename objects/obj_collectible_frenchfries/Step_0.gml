@@ -2,11 +2,11 @@
 
 if (alive) {
 	if (dir == 0) {
-		x -= lengthdir_x(2, image_angle);
+		x -= lengthdir_x(2, image_angle) * obj_timeController.slowingFactor;
 		image_xscale = 1;
 	}
 	if (dir == 1) {
-		x += lengthdir_x(2, image_angle);
+		x += lengthdir_x(2, image_angle) * obj_timeController.slowingFactor;
 		image_xscale = -1;
 	}
 	
@@ -14,9 +14,16 @@ if (alive) {
 	 *** Collision behavior ***
 	 **************************/
 	 
-	if (place_meeting(x, y, obj_topBody)) {
+	if (place_meeting(x, y, obj_topBody)
+		or place_meeting(x, y, obj_middleBody)
+		or place_meeting(x, y, obj_bottomBody)
+	) {
 		alarm[0] = 15;
 		alive = false;
+		
+		// Camera shake.
+		obj_cameraController.shake = true;
+		obj_cameraController.alarm[0] =	30;
 		
 		/**********************
 		 *** Score behavior ***
@@ -36,3 +43,9 @@ if (alive) {
 }
 
 
+/**************************
+ *** Animation behavior ***
+ **************************/
+ 
+if (obj_timeController.isSlowing) image_speed = SLOW_FPS;
+else image_speed = REGULAR_FPS;

@@ -22,6 +22,6 @@ ENEMY_PROBABILITY = .3;
 
 // Min distance for the player to reach before the controller should
 // start spawning stuff.
-MIN_SPAWN_DISTANCE = 700;
+MIN_SPAWN_DISTANCE = 800;
 
 // Specifics.
