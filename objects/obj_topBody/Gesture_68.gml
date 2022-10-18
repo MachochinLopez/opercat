@@ -1,6 +1,8 @@
 /// @description On drag release of cat
 // Launch cat.
 
+if (!alive) return;
+
 launchDirectionX = (bodyBottomInstance.x - x) * -IMPULSE_FORCE;
 launchDirectionY = (bodyBottomInstance.y - y) * -IMPULSE_FORCE;
 

@@ -1,5 +1,7 @@
 /// @description On drag start cat
 
+if (!alive) return;
+
 dragOffsetY = y - event_data[?"posY"];
 dragOffsetX = x - event_data[?"posX"];
 dragPosY = event_data[?"posY"] + dragOffsetY;

@@ -2,7 +2,7 @@
 
 // Only affect body position if the minimum length is reached (to prevent
 // weird behaviors).
-if (instance_exists(bodyMiddleInstance)) {
+if (instance_exists(bodyMiddleInstance) and alive) {
 	// Angle from the top to the bottom of the body.
 	catAngle = point_direction(x, y, dragPosX, dragPosY);
 	my_sprite_angle = catAngle  + 90;

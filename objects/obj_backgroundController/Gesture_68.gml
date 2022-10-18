@@ -1,6 +1,5 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
+/// @description mark game as started
 
-started = true;
+if (!started) started = true;
 
 
