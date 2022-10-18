@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_enemy_test",
+  "name": "obj_enemy_bizcocho",
   "spriteId": {
     "name": "spr_bizcocho",
     "path": "sprites/spr_bizcocho/spr_bizcocho.yy",
