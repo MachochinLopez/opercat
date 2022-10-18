@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_enemy_test",
   "spriteId": {
-    "name": "Sprite6",
-    "path": "sprites/Sprite6/Sprite6.yy",
+    "name": "spr_bizcocho",
+    "path": "sprites/spr_bizcocho/spr_bizcocho.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,10 +24,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [
-    {"x":0.0,"y":0.0,},
-    {"x":64.0,"y":0.0,},
-    {"x":64.0,"y":64.0,},
-    {"x":0.0,"y":64.0,},
+    {"x":103.0,"y":145.0,},
+    {"x":283.0,"y":145.0,},
+    {"x":283.0,"y":225.0,},
+    {"x":103.0,"y":225.0,},
   ],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
@@ -37,7 +37,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "Enemies",
+    "path": "folders/Objetos/Enemies.yy",
   },
 }

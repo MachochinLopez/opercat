@@ -25,6 +25,30 @@ if (shouldScroll) {
 	}
 }
 
+/**************************
+ *** Instances Behavior ***
+ **************************/
+
+if (shouldScroll) {
+	// Scroll down background elements
+	for (var i = 0; i <= array_length(collectiblesElements) - 1; i += 1) {
+		var inst = layer_instance_get_instance(collectiblesElements[i]);
+		// Depth index affects scroll velocity.
+		if (instance_exists(inst)) {
+			inst.y += -playerRef.phy_speed_y * DECELERATION_FACTOR_COLLECTIBLES * (i + 1);
+		}
+	}
+	
+	// Scroll down background elements
+	for (var i = 0; i <= array_length(enemiesElements) - 1; i += 1) {
+		var inst = layer_instance_get_instance(enemiesElements[i]);
+		// Depth index affects scroll velocity.
+		if (instance_exists(inst)) {
+			inst.phy_position_y += -playerRef.phy_speed_y * DECELERATION_FACTOR_COLLECTIBLES * (i + 1);
+		}
+	}
+}
+
 /**********************
  *** Score Behavior ***
  **********************/
