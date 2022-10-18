@@ -52,6 +52,7 @@ if (isFalling && isLaunched) {
 if (place_meeting(x, y + 10, obj_deathZone) and alive) {
 	// Set alarm.
 	alarm[0] = 30;
+	alarm[1] = 30;
 	// Stop player
 	phy_speed_y = 0;
 	phy_speed_x = 0;
@@ -66,7 +67,6 @@ if (place_meeting(x, y + 10, obj_deathZone) and alive) {
 }
 
 if (place_meeting(x, y, obj_stopPlayer)) {
-	show_debug_message("ASDHFKLJASDHFJAHSDKF");
 	phy_speed_y = 0;
 	phy_speed_x = 0;
 	physics_world_gravity(0, 0);
