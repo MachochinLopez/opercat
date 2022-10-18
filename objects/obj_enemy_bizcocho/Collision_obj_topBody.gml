@@ -22,3 +22,10 @@ alive = false;
 
 audio_play_sound(snd_bonk, 2, false);
 audio_play_sound(snd_la_cague_sped_up, 2, false);
+
+/**********************
+ *** Score behavior ***
+ **********************/
+		 
+// Add points (which are set in obj_scoreController create event).
+global.currentScore = max(0, global.currentScore - obj_scoreController.PTS_FRENCH_FRIES);

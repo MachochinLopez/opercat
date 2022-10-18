@@ -2,4 +2,5 @@
 
 draw_set_color(c_black);
 draw_set_font(font_text);
-draw_text(64, 32, floor(global.currentScore));
+draw_set_valign(fa_left);
+draw_text(90, 64, floor(global.currentScore));
