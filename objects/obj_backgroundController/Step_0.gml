@@ -8,7 +8,14 @@ if (shouldScroll) {
 	refreshElementsOfLayers();
 }
 
+/**********************
+*** Score Behavior ***
+**********************/
+
+if (playerRef.phy_speed_y < 0) global.currentScore += obj_scoreController.SCORE_UNIT * -distance;
+
 if (started && obj_topBody.alive) {
+	
 	/**********************
 	 *** Layer Behavior ***
 	 **********************/
@@ -43,12 +50,4 @@ if (started && obj_topBody.alive) {
 		// Depth index affects scroll velocity.
 		if (instance_exists(inst)) inst.phy_position_y += -distance * DECELERATION_FACTOR_COLLECTIBLES;
 	}
-}
-
-/**********************
- *** Score Behavior ***
- **********************/
-
-if (shouldScroll) {
-	global.currentScore += obj_scoreController.SCORE_UNIT;
 }

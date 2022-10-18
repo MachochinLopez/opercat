@@ -1,4 +1,4 @@
-/// @description mark game as started
+/// @description mark game as started and start scroll
 
 if (!started) started = true;
 
