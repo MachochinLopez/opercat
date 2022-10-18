@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_cameraController",
   "spriteId": {
-    "name": "spr_gameManager",
-    "path": "sprites/spr_gameManager/spr_gameManager.yy",
+    "name": "spr_cameraManager",
+    "path": "sprites/spr_cameraManager/spr_cameraManager.yy",
   },
   "solid": false,
   "visible": true,

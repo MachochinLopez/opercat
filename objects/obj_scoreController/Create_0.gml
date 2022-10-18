@@ -13,3 +13,5 @@ global.currentScore = 0;
  ******************************/
  
 PTS_FRENCH_FRIES = 300;
+
+font_text = font_add("pulang.otf", 45, false, false, 32, 128);

@@ -36,3 +36,5 @@ ANIMATION_FPS = 14;
  
 isFalling = false;
 isLaunched = false;
+
+font_text = font_add("pulang.otf", 80, false, false, 32, 128);
