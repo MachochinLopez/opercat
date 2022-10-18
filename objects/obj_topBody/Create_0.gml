@@ -1,6 +1,8 @@
 /// @description on create
 // Mostly set vars
 
+alive = true;
+
 // Constants.
 MIN_DRAG_DISTANCE = 30;
 MAX_DRAG = 300;

@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_deathZone",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_deathZone",
+    "path": "sprites/spr_deathZone/spr_deathZone.yy",
+  },
   "solid": true,
   "visible": true,
   "managed": true,

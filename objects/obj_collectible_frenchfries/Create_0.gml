@@ -14,3 +14,6 @@ alive = true;
 
 FALL_SPEED_POST_DEATH = 10;
 EXPANSION_RATE = 0.05;
+
+REGULAR_FPS = image_speed;
+SLOW_FPS = image_speed * .6;
