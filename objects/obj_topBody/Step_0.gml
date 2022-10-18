@@ -43,3 +43,24 @@ if (phy_speed_y >= 1) {
 if (isFalling && isLaunched) {
 	sprite_index = falling_sm;
 }
+
+
+/**********************
+ *** DEATH BEHAVIOR ***
+ **********************/
+
+if (place_meeting(x, y, obj_deathZone) and alive) {
+	// Set alarm.
+	alarm[0] = 30;
+	// Stop player
+	phy_speed_y = 0;
+	phy_speed_x = 0;
+	phy_rotation = 0;
+	physics_world_gravity(0, 0);
+	sprite_index = falling_sm;
+	// Camera shake.
+	obj_cameraController.shake = true;
+	obj_cameraController.alarm[0] =	30;
+	
+	alive = false;
+}
