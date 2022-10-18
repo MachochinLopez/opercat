@@ -7,3 +7,9 @@ SCORE_UNIT = 5;
 
 // Vars
 global.currentScore = 0;
+
+/******************************
+ *** Collectibles constants ***
+ ******************************/
+ 
+PTS_FRENCH_FRIES = 300;

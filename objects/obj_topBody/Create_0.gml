@@ -14,6 +14,7 @@ REGULAR_GRAVITY = 100;
 distanceBetween = 0;
 catAngle = 0;
 bodyMiddleInstance = noone;
+bodyBottomInstance = noone;
 dragOffsetY = 0;
 dragOffsetX = 0;
 
